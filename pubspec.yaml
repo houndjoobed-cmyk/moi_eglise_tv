@@ -1,0 +1,57 @@
+name: moi_eglise_tv
+description: Application de live streaming pour Moi Église TV
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Lecteur vidéo pour le streaming
+  video_player: ^2.8.1
+  
+  # Pour les vidéos en réseau (HLS)
+  chewie: ^1.7.5
+  
+  # Pour le partage
+  share_plus: ^7.2.1
+  
+  # Pour les icônes
+  cupertino_icons: ^1.0.6
+  
+  # Pour les animations
+  animated_splash_screen: ^1.3.0
+  lottie: ^3.0.0
+  
+  # Pour les URLs
+  url_launcher: ^6.2.2
+
+  # Pour empêcher l’écran de s’éteindre pendant le live
+  wakelock_plus: ^1.2.8
+# FIREBASE - AJOUTEZ CES LIGNES
+ # firebase_core: ^2.24.2
+  #firebase_database: ^10.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/font/
+    - assets/logo/logo.png
+  
+  fonts:
+    - family: Lobster
+      fonts:
+        - asset: assets/font/Lobster-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: assets/font/Montserrat-Bold.ttf
+          weight: 700
